@@ -1,0 +1,27 @@
+# Ignore Visual Studio project files
+DiscreteProject/DiscreteProject.vcxproj
+DiscreteProject/DiscreteProject.vcxproj.filters
+DiscreteProject/DiscreteProject.vcxproj.user
+
+# (Optional) Also ignore typical Visual Studio temporary/build files
+*.obj
+*.pdb
+*.idb
+*.ipch
+*.tlog
+*.log
+*.cache
+*.db
+*.sdf
+*.opendb
+*.userosscache
+*.VC.db
+*.VC.VC.opendb
+*.ncb
+*.suo
+*.user
+*.unsuccessfulbuild
+Debug/
+Release/
+x64/
+ipch/
