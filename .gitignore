@@ -1,7 +1,7 @@
 # Ignore Visual Studio project files
-DiscreteProject/DiscreteProject.vcxproj
-DiscreteProject/DiscreteProject.vcxproj.filters
-DiscreteProject/DiscreteProject.vcxproj.user
+DiscreteProject.vcxproj
+DiscreteProject.vcxproj.filters
+DiscreteProject.vcxproj.user
 
 # (Optional) Also ignore typical Visual Studio temporary/build files
 *.obj
