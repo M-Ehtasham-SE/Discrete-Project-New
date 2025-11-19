@@ -1,1 +1,6 @@
-//Ehtasham Batalwi	 - 4
+#include<iostream>
+#include "MainManager.h"
+MainManager obj;
+int main() {
+	obj.displayMenu();
+}
