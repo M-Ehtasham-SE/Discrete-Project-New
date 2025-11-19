@@ -10,6 +10,11 @@
 #include "InductionEngine.h"
 #include "Tests.h"
 
+#include "FunctionsManager.h"
+#include "LogicInferenceEngine.h"
+#include "ConsistencyChecker.h"
+#include "EfficiencyBenchmarks.h"
+
 class MainManager {
 public:
     int choice;
