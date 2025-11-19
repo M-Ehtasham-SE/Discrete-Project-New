@@ -3,8 +3,8 @@
 
 class Module {
 public:
-    virtual void run() = 0;
-    virtual ~Module() {}
+    virtual void run() = 0;   
+    virtual ~Module() {}      
 };
 
 #endif
