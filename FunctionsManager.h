@@ -5,11 +5,11 @@
 
 class FunctionsManager : public Module {
 private:
-    char students[100][50];      
-    char courses[100][50];    
+    char students[100][50];      // Domain elements
+    char courses[100][50];       // Codomain elements  
     int mappingCount;
 
-    char codomainSet[100][50]; 
+    char codomainSet[100][50];
     int codomainCount;
 
     int findInCodomainSet(const char* value) const;
@@ -18,10 +18,10 @@ private:
 public:
     FunctionsManager();
 
-    void addMapping();         
-    void checkInjective();    
-    void checkSurjective();   
-    void checkBijective();     
+    void addMapping();
+    void checkInjective();
+    void checkSurjective();
+    void checkBijective();
 
     void run() override;
 };

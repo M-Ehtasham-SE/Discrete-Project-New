@@ -1,3 +1,5 @@
+#define _CRT_SECURE_NO_WARNINGS
+
 #include "StudentGroup.h"
 #include <iostream>
 #include <cstring>
@@ -12,13 +14,13 @@ private:
 
 public:
     StudentGroupManager() : studentCount(0), groupCount(0), projectCount(0) {
-        strcpy(groups[groupCount++], "CS-1A");
-        strcpy(groups[groupCount++], "CS-1B");
-        strcpy(groups[groupCount++], "CS-2A");
+        strcpy_s(groups[groupCount++], "CS-1A");
+        strcpy_s(groups[groupCount++], "CS-1B");
+        strcpy_s(groups[groupCount++], "CS-2A");
 
-        strcpy(projects[projectCount++], "Database Project");
-        strcpy(projects[projectCount++], "AI Research");
-        strcpy(projects[projectCount++], "Web Application");
+        strcpy_s(projects[projectCount++], "Database Project");
+        strcpy_s(projects[projectCount++], "AI Research");
+        strcpy_s(projects[projectCount++], "Web Application");
     }
 
     long long calculateCombinations(int n, int r) {

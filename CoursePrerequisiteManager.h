@@ -12,7 +12,7 @@ public:
     char prereqOf[100][50];
     int prereqCount;
 
-    CoursePrerequisiteManager() : courseCount(0), prereqCount(0) {}
+    CoursePrerequisiteManager();
 
     void addCourse(const char* course);
     void addPrerequisite(const char* course, const char* prereq);

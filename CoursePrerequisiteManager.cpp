@@ -1,8 +1,16 @@
+#define _CRT_SECURE_NO_WARNINGS
+
 #include "CoursePrerequisiteManager.h"
 #include <iostream>
 #include <cstring>
 #include <algorithm>
 using namespace std;
+
+CoursePrerequisiteManager::CoursePrerequisiteManager() : courseCount(0), prereqCount(0) {
+    memset(courses, 0, sizeof(courses));
+    memset(prereqCourse, 0, sizeof(prereqCourse));
+    memset(prereqOf, 0, sizeof(prereqOf));
+}
 
 void CoursePrerequisiteManager::addCourse(const char* course) {
     if (courseCount < 50) {

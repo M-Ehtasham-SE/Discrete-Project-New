@@ -1,3 +1,5 @@
+#define _CRT_SECURE_NO_WARNINGS
+
 #include "FunctionsManager.h"
 #include <iostream>
 #include <cstring>
@@ -7,6 +9,10 @@ FunctionsManager::FunctionsManager()
 {
     mappingCount = 0;
     codomainCount = 0;
+    // Initialize arrays
+    memset(students, 0, sizeof(students));
+    memset(courses, 0, sizeof(courses));
+    memset(codomainSet, 0, sizeof(codomainSet));
 }
 
 int FunctionsManager::findInCodomainSet(const char* value) const
@@ -22,7 +28,7 @@ int FunctionsManager::countCodomainOccurrences(const char* value) const
 {
     int count = 0;
     for (int i = 0; i < mappingCount; ++i) {
-        if (strcmp(course[i], value) == 0)
+        if (strcmp(courses[i], value) == 0)
             ++count;
     }
     return count;
@@ -42,9 +48,10 @@ void FunctionsManager::addMapping()
     cout << "Enter codomain element (e.g. course name): ";
     cin.getline(c, 50);
 
-    strcpy(domain[mappingCount], d);
-    strcpy(codomain[mappingCount], c);
+    strcpy(students[mappingCount], d);
+    strcpy(courses[mappingCount], c);
     mappingCount++;
+
     if (findInCodomainSet(c) == -1 && codomainCount < 100) {
         strcpy(codomainSet[codomainCount], c);
         codomainCount++;
@@ -64,12 +71,12 @@ void FunctionsManager::checkInjective()
 
     for (int i = 0; i < mappingCount; ++i) {
         for (int j = i + 1; j < mappingCount; ++j) {
-           
-            if (strcmp(student[i], course[j]) == 0 && strcmp(student[i], course[j]) != 0) {
+            if (strcmp(courses[i], courses[j]) == 0 &&
+                strcmp(students[i], students[j]) != 0) {
                 injective = false;
                 cout << "Not injective because:\n";
-                cout << "  " << student[i] << " -> " << course[i] << "\n";
-                cout << "  " << student[j] << " -> " << course[j] << "\n";
+                cout << "  " << students[i] << " -> " << courses[i] << "\n";
+                cout << "  " << students[j] << " -> " << courses[j] << "\n";
             }
         }
     }
@@ -110,12 +117,13 @@ void FunctionsManager::checkBijective()
     bool injective = true;
     for (int i = 0; i < mappingCount; ++i) {
         for (int j = i + 1; j < mappingCount; ++j) {
-            if (strcmp(course[i], course[j]) == 0 &&
-                strcmp(student[i], student[j]) != 0) {
+            if (strcmp(courses[i], courses[j]) == 0 &&
+                strcmp(students[i], students[j]) != 0) {
                 injective = false;
             }
         }
     }
+
     bool surjective = true;
     for (int i = 0; i < codomainCount; ++i) {
         int occ = countCodomainOccurrences(codomainSet[i]);

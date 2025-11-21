@@ -1,3 +1,5 @@
+#define _CRT_SECURE_NO_WARNINGS
+
 #include "ConsistencyChecker.h"
 #include <iostream>
 #include <cstring>
@@ -8,6 +10,14 @@ ConsistencyChecker::ConsistencyChecker()
     courseCount = 0;
     prereqCount = 0;
     facultyAssignCount = 0;
+    // Initialize arrays
+    memset(courseNames, 0, sizeof(courseNames));
+    memset(courseTimes, 0, sizeof(courseTimes));
+    memset(prereqCourse, 0, sizeof(prereqCourse));
+    memset(prereqOf, 0, sizeof(prereqOf));
+    memset(facultyNames, 0, sizeof(facultyNames));
+    memset(roomNames, 0, sizeof(roomNames));
+    memset(slotTimes, 0, sizeof(slotTimes));
 }
 
 void ConsistencyChecker::checkCourseConflicts()

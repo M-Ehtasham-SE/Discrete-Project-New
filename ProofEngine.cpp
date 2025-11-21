@@ -1,3 +1,6 @@
+#define _CRT_SECURE_NO_WARNINGS
+
+
 #include "ProofEngine.h"
 #include <iostream>
 #include <cstring>

@@ -1,3 +1,5 @@
+#define _CRT_SECURE_NO_WARNINGS
+
 #include "InductionEngine.h"
 #include <iostream>
 #include <cstring>
