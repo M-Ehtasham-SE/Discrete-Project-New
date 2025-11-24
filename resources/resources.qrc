@@ -1,0 +1,19 @@
+<RCC>
+    <qresource prefix="/icons">
+        <file>app_icon.png</file>
+        <file>course.png</file>
+        <file>students.png</file>
+        <file>sets.png</file>
+        <file>relations.png</file>
+        <file>proof.png</file>
+        <file>induction.png</file>
+        <file>tests.png</file>
+        <file>functions.png</file>
+        <file>logic.png</file>
+        <file>consistency.png</file>
+        <file>efficiency.png</file>
+    </qresource>
+    <qresource prefix="/styles">
+        <file>darktheme.qss</file>
+    </qresource>
+</RCC>

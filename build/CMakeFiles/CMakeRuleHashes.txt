@@ -1,0 +1,4 @@
+# Hashes of file build rules.
+cceca64e132e40ad5b50f2bdb766342d CMakeFiles/UnidiscEngine_autogen
+1e6ce651a8d2c94e802eb2929deba339 UnidiscEngine_autogen/3YJK5W5UP7/qrc_resources.cpp
+b65bbf1fa26aba4fba58401a0cd36660 UnidiscEngine_autogen/timestamp

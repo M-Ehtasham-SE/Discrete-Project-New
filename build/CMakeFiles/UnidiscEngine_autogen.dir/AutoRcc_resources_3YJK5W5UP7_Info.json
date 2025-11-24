@@ -1,0 +1,37 @@
+{
+	"BUILD_DIR" : "/home/wolf/Music/discreet/build/UnidiscEngine_autogen",
+	"CMAKE_BINARY_DIR" : "/home/wolf/Music/discreet/build",
+	"CMAKE_CURRENT_BINARY_DIR" : "/home/wolf/Music/discreet/build",
+	"CMAKE_CURRENT_SOURCE_DIR" : "/home/wolf/Music/discreet",
+	"CMAKE_SOURCE_DIR" : "/home/wolf/Music/discreet",
+	"CROSS_CONFIG" : false,
+	"GENERATOR" : "Unix Makefiles",
+	"INCLUDE_DIR" : "/home/wolf/Music/discreet/build/UnidiscEngine_autogen/include",
+	"INPUTS" : 
+	[
+		"/home/wolf/Music/discreet/resources/darktheme.qss",
+		"/home/wolf/Music/discreet/resources/students.png",
+		"/home/wolf/Music/discreet/resources/relations.png",
+		"/home/wolf/Music/discreet/resources/induction.png",
+		"/home/wolf/Music/discreet/resources/sets.png",
+		"/home/wolf/Music/discreet/resources/tests.png",
+		"/home/wolf/Music/discreet/resources/course.png",
+		"/home/wolf/Music/discreet/resources/efficiency.png",
+		"/home/wolf/Music/discreet/resources/app_icon.png",
+		"/home/wolf/Music/discreet/resources/consistency.png",
+		"/home/wolf/Music/discreet/resources/logic.png",
+		"/home/wolf/Music/discreet/resources/functions.png",
+		"/home/wolf/Music/discreet/resources/proof.png"
+	],
+	"LOCK_FILE" : "/home/wolf/Music/discreet/build/CMakeFiles/UnidiscEngine_autogen.dir/AutoRcc_resources_3YJK5W5UP7_Lock.lock",
+	"MULTI_CONFIG" : false,
+	"OPTIONS" : [ "-name", "resources" ],
+	"OUTPUT_CHECKSUM" : "3YJK5W5UP7",
+	"OUTPUT_NAME" : "qrc_resources.cpp",
+	"RCC_EXECUTABLE" : "/usr/lib/qt6/libexec/rcc",
+	"RCC_LIST_OPTIONS" : [ "--list" ],
+	"SETTINGS_FILE" : "/home/wolf/Music/discreet/build/CMakeFiles/UnidiscEngine_autogen.dir/AutoRcc_resources_3YJK5W5UP7_Used.txt",
+	"SOURCE" : "/home/wolf/Music/discreet/resources/resources.qrc",
+	"USE_BETTER_GRAPH" : true,
+	"VERBOSITY" : 0
+}

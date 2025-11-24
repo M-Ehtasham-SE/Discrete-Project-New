@@ -1,0 +1,9 @@
+/home/wolf/Music/discreet/build/CMakeFiles/UnidiscEngine.dir
+/home/wolf/Music/discreet/build/CMakeFiles/edit_cache.dir
+/home/wolf/Music/discreet/build/CMakeFiles/rebuild_cache.dir
+/home/wolf/Music/discreet/build/CMakeFiles/list_install_components.dir
+/home/wolf/Music/discreet/build/CMakeFiles/install.dir
+/home/wolf/Music/discreet/build/CMakeFiles/install/local.dir
+/home/wolf/Music/discreet/build/CMakeFiles/install/strip.dir
+/home/wolf/Music/discreet/build/CMakeFiles/UnidiscEngine_autogen_timestamp_deps.dir
+/home/wolf/Music/discreet/build/CMakeFiles/UnidiscEngine_autogen.dir
